@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <title>Семантинка</title>
 </head>
@@ -129,37 +131,45 @@
         </article>
 
       </section>
-      <section class="main-images">
-        <div class="image-frist">
-          <img src="./images/images/1.jpg" alt="Fontend-розробник працює">
+      <div class="app-media">
+        <section class="main-images">
+          <div class=" imagebox image-frist">
+            <img src="./images/images/1.jpg" alt="Fontend-розробник працює">
+          </div>
+          <div class=" imagebox image-secound">
+            <img src="./images/images/2.jpg" alt="Fontend-розробник працює">
+          </div>
+        </section>
+        <div class="app-audio">
+          <audio controls src="./assets/audio/1.mp3"></audio>
         </div>
-        <div class="image-secound">
-          <img src="./images/images/2.jpg" alt="Fontend-розробник працює">
+        <div class="app-video">
+          <video controls src="./assets/video/1.mp4"></video>
         </div>
-      </section>
+        <section class="main-video">
+          <iframe  src="https://www.youtube.com/embed/dEBVe8Ij7JU?si=imjPhGH46j_xyhk1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
 
-      <section class="main-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dEBVe8Ij7JU?si=imjPhGH46j_xyhk1"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        </section>
 
-      </section>
+        <section class="main-CV">
+          <iframe class="iframe-CV" src="../html/index.html" width="500" height="auto"></iframe>
+        </section>
+      </div>
 
-      <section class="main-CV">
-        <iframe class="iframe-CV" src="../html/index.html" width="400" height="auto"></iframe>
-      </section>
     </main>
     <footer class="app-footer" id="footer">
       <div class="footer-social_media">
-        <ul>
+        <ul class="footer-menu">
           <li><a href="https://t.me/nordelav" target="_blank" rel="noopener noreferrer"><img src="./images/logo/1.svg"
-                alt="Telegram" width="40px" height="auto"></a></li>
+                alt="Telegram" ></a></li>
           <li><a href="https://www.facebook.com/profile.php?id=100017333162685&locale=uk_UA" target="_blank"
               rel="noopener noreferrer"><img src="./images/logo/2.svg" alt="Facebook" width="40px" height="auto"></a>
           </li>
           <li><a href="https://github.com/Nordelav" target="_blank" rel="noopener noreferrer">
-              <img src="./images/logo/3.svg" alt="" width="40px" height="auto"></a></li>
+              <img src="./images/logo/3.svg" alt="github"></a></li>
         </ul>
       </div>
     </footer>
