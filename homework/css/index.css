@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 18px;
+  font-family:'Inter', sans-serif;
+  font-weight: 400;
+}
+.app {
+  padding-left: 66px;
+  
+}
+.app-header {
+  
+}
+
+.header-figure-blocks {
+  margin-top: 29px;
+  width: 100px;
+  height: 100px;
+}
+.qube-red {
+  background-color: #FF0000;
+}
+.qube-green {
+  background-color: #00FF00;
+}
+.qube-blue {
+  background-color: #0000FF;
+}
+
+.grey-circle {
+  border-radius: 50%;
+  background-color: #C3C3C3;
+}
+.main-first-article-block,.main-secound-article-block {
+  margin-top: 29px;
+  width: 500px;
+
+}
+.main-first-paragraph {
+  
+
+}
+
+.secound-article-heading {
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.secound-article-span {
+  font-weight: 700;
+}
+.secound-article-paragraph{
+  font-style: italic;
+}

@@ -5,87 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Резюме</title>
-  <link rel="stylesheet" href="./css/index.css">
-  <!-- TODO : доддати стиль для html -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-  <header>
-    <menu>
-      <ul>
-        <!--Долав посилання на сторінку з дз   -->
-        <li><a href="../../index.html" title="Меню вибору домашньої роботи">Головна</a></li>
-        <li><a href="#">Послуги</a></li>
-        <li><a href="#">Про мене</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-      <a href="./pages/index-en.html">English</a>
-    </menu>
-    <hr>
-  </header>
-  <main>
-    <h1>Про мене</h1>
-    <div class="main-picture">
-      <img src="./images/my_photo.jpg" alt="Моє фото" width="300px" height="auto">
-    </div>
-    <div class="main-article">
-      <div class="article-biography">
-        <h2>Біографія</h2>
-        <p>Вітаю! Мене звати Чорний Валентин. Мені 26 років, я з міста Хмельницький, Україна.<br>Працюю у
-          Комунальному
-          некомерційному підприємстві «Хмельницька центральна районна лікарня». Моя посада: лікар -терапевт
-          стаціонарного терапевтичного та паліативного відділення.
-        </p>
-        <hr>
-      </div>
+  <div class="app">
+    <header class="app-header">
+      <menu class="header-menu-block">
+        <nav header>
+          <ul>
+            <!--Долав посилання на сторінку з дз   -->
+            <li><a href="../../index.html" title="Меню вибору домашньої роботи">Головна</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Про мене</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <a href="./pages/index-en.html">English</a>
+      </menu>
+    </header>
 
-      <div class="article-education">
-        <h2>Освіта </h2>
-        <p>Закінчив <abbr title="Буковинський державний медичний університет">БДМУ</abbr> та інтернатуру у <abbr
-            title="Вінницький національний медичний університет">ВНМУ</abbr> , маю повну вищу медичну
-          освіту.
-        </p>
-        <hr>
+    <main class="app-main">
+      <h1>Про мене</h1>
+      <div class="main-picture-block">
+        <img src="./images/my_photo.jpg" alt="Моє фото" width="300px" height="auto">
       </div>
-      <div class="arctice-expirience">
-        <h2>Досвід</h2>
-        <p>Досвіду роботи у сфері ІТ в мене немає, раніше сам вивчав HTML та СSS, але без явного результату.
+      <div class="main-articles">
+        <article class="article-biography">
+          <h2>Біографія</h2>
+          <p>Вітаю! Мене звати Чорний Валентин. Мені 26 років, я з міста Хмельницький, Україна.<br>Працюю у
+            Комунальному
+            некомерційному підприємстві «Хмельницька центральна районна лікарня». Моя посада: лікар -терапевт
+            стаціонарного терапевтичного та паліативного відділення.
+          </p>
 
-        </p>
-        <hr>
+        </article>
+
+        <article class="article-education">
+          <h2>Освіта </h2>
+          <p>Закінчив <abbr title="Буковинський державний медичний університет">БДМУ</abbr> та інтернатуру у <abbr
+              title="Вінницький національний медичний університет">ВНМУ</abbr> , маю повну вищу медичну
+            освіту.
+          </p>
+
+        </article>
+        <article class="arctice-expirience">
+          <h2>Досвід</h2>
+          <p>Досвіду роботи у сфері ІТ в мене немає, раніше сам вивчав HTML та СSS, але без явного результату.
+
+          </p>
+
+        </article>
+        <article class="article-introduction">
+          <h2>Знайомство з Beetroot</h2>
+          <p>Курси від компанії «Beetroot» мені порадив знайомий, що вже працює у сфері ІТ. Також я пройшов
+            безкоштовний міні-курс з Frontend розробки, який мені дуже сподобався.
+          </p>
+
+        </article>
+
+        <article class="article-purpose">
+          <h2>Моя мета</h2>
+          <p>Я тут для того щоб оволодіти навичками Fontend- розробника. В подальшому хочу знайти роботу та
+            поступово
+            перейти у нову для себе галузь!
+          </p>
+        </article>
       </div>
-      <div class="article-introduction">
-        <h2>Знайомство з Beetroot</h2>
-        <p>Курси від компанії «Beetroot» мені порадив знайомий, що вже працює у сфері ІТ. Також я пройшов
-          безкоштовний міні-курс з Frontend розробки, який мені дуже сподобався.
-        </p>
-        <hr>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-social-media-block">
+        <nav>
+          <ul class footer>
+            <li><a href="https://t.me/nordelav" target="_blank" rel="noopener noreferrer"><img src="./images/logo/1.svg"
+                  alt="Telegram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100017333162685&locale=uk_UA" target="_blank"
+                rel="noopener noreferrer"><img src="./images/logo/2.svg" alt="Facebook"></a>
+            </li>
+            <li><a href="https://github.com/Nordelav" target="_blank" rel="noopener noreferrer">
+                <img src="./images/logo/3.svg" alt=""></a></li>
+          </ul>
+        </nav>
       </div>
+    </footer>
+  </div>
 
-      <div class="article-purpose">
-        <h2>Моя мета</h2>
-        <p>Я тут для того щоб оволодіти навичками Fontend- розробника. В подальшому хочу знайти роботу та
-          поступово
-          перейти у нову для себе галузь!
-        </p>
-        <hr>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-social_media">
-      <ul>
-        <li><a href="https://t.me/nordelav" target="_blank" rel="noopener noreferrer"><img src="./images/logo/1.svg"
-              alt="Telegram" width="40px" height="auto"></a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100017333162685&locale=uk_UA" target="_blank"
-            rel="noopener noreferrer"><img src="./images/logo/2.svg" alt="Facebook" width="40px" height="auto"></a></li>
-        <li><a href="https://github.com/Nordelav" target="_blank" rel="noopener noreferrer">
-            <img src="./images/logo/3.svg" alt="" width="40px" height="auto"></a></li>
-      </ul>
-    </div>
-
-  </footer>
 </body>
 
 </html>
