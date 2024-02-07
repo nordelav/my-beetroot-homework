@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* обнулив стиль для <a> */
+a,
+a:hover {
+  text-decoration: none;
+  color:inherit;
+}
+/*Ширина картинки бу стільки, скільки матиме її обгортка  */
+img {
+  width: 100%;
+}
+/* Підключено шрифт Roboto */
+body {
+
+  font-family: "Roboto", sans-serif;
+  font-style: 16px;
+  color: #000;
+  font-weight: 400;
+}
+/* Данні блоки матимуть видиму границю */
+.main-heading-block,.app-header,.app-footer,.main-articles{
+  padding: 20px 20px;
+  border: 1px solid #000 ;
+  
+}
+.app-header {
+  background-color: #FCBCB8;
+  border: 1px solid #000 ;
+  border-radius: 0 0 5px 5px;
+}
+.header-menu{
+  text-align: center;
+}
+.header-menu-list{
+  list-style: none;
+}
+/* замість flexbox для меню */
+.menu-list-item{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+
+.main-heading-block{
+  background-color: #F4F1BB;
+  
+}
+.main-heading-block h1{
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  
+}
+/* Створення "круглої фотографії" */
+.main-picture-block {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.article-biography {
+  display: inline-block;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+.main-articles {
+  background-color: #9BC1BC;
+  border-radius: 5px;
+}
+.main-articles h2{
+  font-weight: 500px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.app-footer {
+  border-radius: 5px 5px 0 0;
+  background-color: #FCBCB8;
+}
+.footer-list{
+  text-align: center;
+}
+.footer-list{
+  list-style: none;
+}
+/* замість flexbox для меню */
+.footer-list-item{
+  display: inline-block;
+  margin: 0 10px;
+  
+}
+.footer-list-item img {
+  width: 30px;
+
+}
+

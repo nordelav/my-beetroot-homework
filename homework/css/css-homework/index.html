@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Резюме</title>
-  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../../../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -13,12 +17,15 @@
     <header class="app-header">
       <menu class="header-menu-block">
         <nav class="header-menu">
+          <!-- замість flexbox використав display:inline-block + text-align:center -->
           <ul class="header-menu-list">
             <!--Долав посилання на сторінку з дз   -->
-            <li class="menu-list-item"><a href="../../index.html" title="Меню вибору домашньої роботи">Головна</a></li>
+            <li class="menu-list-item"><a href="../../../index.html" title="Меню вибору домашньої роботи">Головна</a>
+            </li>
             <li class="menu-list-item"><a href="#">Послуги</a></li>
             <li class="menu-list-item"><a href="#">Про мене</a></li>
             <li class="menu-list-item"><a href="#">Контакти</a></li>
+            <!--Є перекладена на ангілійську сторінка, нижче посилання на неї. Вона використувує той самий СSS, що і сторінка на українській -->
             <li class="menu-list-item"><a href="./pages/index-en.html">English</a></li>
 
             </li>
@@ -30,6 +37,8 @@
 
     <main class="app-main">
       <section class="main-heading-block">
+        
+          <!-- замість flexbox використав display:inline-block + text-align:center -->
         <h1>Про мене</h1>
         <div class="main-picture-block">
 
@@ -86,6 +95,8 @@
     <footer class="app-footer">
       <div class="footer-social-media-block">
         <nav class="footer-navigation">
+          
+          <!-- замість flexbox використав display:inline-block + text-align:center -->
           <ul class="footer-list">
             <li class="footer-list-item"><a href="https://t.me/nordelav" target="_blank" rel="noopener noreferrer"><img
                   src="./images/logo/1.svg" alt="Telegram"></a></li>
@@ -95,7 +106,8 @@
             <li class="footer-list-item"><a href="https://github.com/Nordelav" target="_blank"
                 rel="noopener noreferrer">
                 <img src="./images/logo/3.svg" alt=""></a></li>
-            <li class="footer-list-item"><a href="mailto:4ernuj@ukr.net">4ernuj@ukr.net</a></li>
+            <!-- Додав посилання на email та номер телефону-->
+                <li class="footer-list-item"><a href="mailto:4ernuj@ukr.net">4ernuj@ukr.net</a></li>
             <li class="footer-list-item"><a href="tel:+380988888888">+380988888888</a></li>
           </ul>
         </nav>
