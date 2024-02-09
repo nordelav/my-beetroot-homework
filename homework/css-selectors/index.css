@@ -1,5 +1,4 @@
 * {
- 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,7 +6,7 @@
 }
 
 body {
- 
+  /* Використано загально  шрифт Roboto*/
   font-family: "Roboto", sans-serif;
   font-size: 11px;
   font-weight: 400;
@@ -29,11 +28,13 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+/*Використовую flex  */
 .app {
-  
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: center;
 }
 .app-header,
 .header-text {
@@ -46,7 +47,6 @@ a:hover {
   background-color: #4a4f56;
   color: #ff8984;
 }
-
 
 .header-text {
   min-width: 276px;
@@ -68,27 +68,25 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 45px;
 }
 
 .shopping-list {
-  
   margin-top: 20px;
   min-width: 534px;
   height: auto;
   display: flex;
   flex-direction: column;
-
 }
 .list-block {
 }
-.list-item:nth-child(even){
-  background-color: #88839E;
-
+/* колір фону для парних та непарних за рахунком дітей */
+.list-item:nth-child(even) {
+  background-color: #88839e;
 }
-.list-item:nth-child(odd){
-  background-color: #7A7593;
-
-} 
+.list-item:nth-child(odd) {
+  background-color: #7a7593;
+}
 .list-item {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
@@ -99,38 +97,37 @@ a:hover {
   align-items: center;
   transition: background-color 0.15s ease-in;
   color: #ffff;
-
 }
-.list-item:hover{
-  background-color:#625E77;
+.list-item:hover {
+  background-color: #625e77;
   border-color: #ffff;
 }
-.list-item:active{
-  background-color:#ff8984;
+.list-item:active {
+  background-color: #ff8984;
 }
-.list-item>input[type="checkbox"]{
+.list-item > input[type="checkbox"] {
   width: 19px;
   height: 19px;
 }
-.list-item>input[type="checkbox"]:checked+span{
+.list-item > input[type="checkbox"]:checked + span {
   opacity: 0.5;
   text-decoration: line-through;
-
-  
 }
-.list-item>span{
-  margin-left:16px;
-  display:flex;
+/* ? Чому мав використовуватись ::before та ::after у цьому макеті?*/
+.list-item > span {
+  margin-left: 16px;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-.item-heading{
+.item-heading {
   font-size: 18px;
   margin-right: 4px;
 }
-.list-button{
+/* !Не знаю як повністю анулювати стиль для кнопки */
+.list-button {
   margin-top: 45px;
   min-height: 45px;
   background-color: #4a4f56;
@@ -139,6 +136,4 @@ a:hover {
   font-size: 18px;
   border-radius: none;
 }
-footer{
-  flex-grow: 1;
-}
+
