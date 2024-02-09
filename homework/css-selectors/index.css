@@ -1,69 +1,144 @@
-*{
+* {
+ 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
-
-body{
-  font-family: "Roboto",sans-serif;
+body {
+ 
+  font-family: "Roboto", sans-serif;
   font-size: 11px;
   font-weight: 400;
-  
 }
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: inherit;
 }
-ul{
+ul {
   list-style-type: none;
 }
-a,a:hover{
+a,
+a:hover {
   text-decoration: none;
   color: inherit;
 }
 .app {
-  background-color:#3B3F45;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-.app-header,.header-text{
+.app-header,
+.header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.app-header  {
-  background-color:#4A4F56;
-  color: #FF8984;
+.app-header {
+  flex-grow: 1;
+  background-color: #4a4f56;
+  color: #ff8984;
+}
 
-}
-.app-header{
-  
-}
 
 .header-text {
- 
+  min-width: 276px;
+  margin: 0 auto;
 }
-.header-text>h1{
+.header-text > h1 {
   font-weight: 700;
   font-size: 24px;
   margin-top: 13px;
 }
-.header-text>p{
+.header-text > p {
   font-size: 16px;
-  margin-top: 4px ;
+  margin-top: 4px;
   margin-bottom: 12px;
 }
-.app-main{
+.app-main {
+  flex-grow: 2;
+  background-color: #3b3f45;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .shopping-list {
   
+  margin-top: 20px;
+  min-width: 534px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 
 }
 .list-block {
 }
+.list-item:nth-child(even){
+  background-color: #88839E;
+
+}
+.list-item:nth-child(odd){
+  background-color: #7A7593;
+
+} 
 .list-item {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  transition: background-color 0.15s ease-in;
+  color: #ffff;
+
+}
+.list-item:hover{
+  background-color:#625E77;
+  border-color: #ffff;
+}
+.list-item:active{
+  background-color:#ff8984;
+}
+.list-item>input[type="checkbox"]{
+  width: 19px;
+  height: 19px;
+}
+.list-item>input[type="checkbox"]:checked+span{
+  opacity: 0.5;
+  text-decoration: line-through;
+
+  
+}
+.list-item>span{
+  margin-left:16px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.item-heading{
+  font-size: 18px;
+  margin-right: 4px;
+}
+.list-button{
+  margin-top: 45px;
+  min-height: 45px;
+  background-color: #4a4f56;
+  box-shadow: none;
+  color: #ff8984;
+  font-size: 18px;
+  border-radius: none;
+}
+footer{
+  flex-grow: 1;
 }
