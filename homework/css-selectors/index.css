@@ -78,8 +78,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-.list-block {
-}
+
 /* колір фону для парних та непарних за рахунком дітей */
 .list-item:nth-child(even) {
   background-color: #88839e;
@@ -91,10 +90,6 @@ a:hover {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   padding: 12px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
   transition: background-color 0.15s ease-in;
   color: #ffff;
 }
@@ -105,20 +100,26 @@ a:hover {
 .list-item:active {
   background-color: #ff8984;
 }
-.list-item > input[type="checkbox"] {
+.list-label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  
+}
+.list-label > input[type="checkbox"] {
   width: 19px;
   height: 19px;
 }
-.list-item > input[type="checkbox"]:checked + span {
+.list-label > input[type="checkbox"]:checked + span {
   opacity: 0.5;
   text-decoration: line-through;
 }
-/* ? Чому мав використовуватись ::before та ::after у цьому макеті?*/
-.list-item > span {
+/* ? Чому мав використовуватись ::before та ::after */
+.list-label > span {
   margin-left: 16px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -134,6 +135,6 @@ a:hover {
   box-shadow: none;
   color: #ff8984;
   font-size: 18px;
-  border-radius: none;
+  
 }
 
