@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   background-color: #3b3f45;
 }
+
 h1,
 h2,
 h3,
@@ -101,12 +102,11 @@ a:hover {
 .list-item:active {
   background-color: #ff8984;
 }
-.list-label{
+.list-label {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  
 }
 .list-label > input[type="checkbox"] {
   width: 19px;
@@ -136,6 +136,4 @@ a:hover {
   border: none;
   color: #ff8984;
   font-size: 18px;
-  
 }
-

@@ -14,7 +14,7 @@
 
 <body>
   <div class="app">
-    <header class="app-header">
+    <header class="app-header app-wrapper">
       <menu class="header-menu-block">
         <nav class="header-menu">
           <!-- замість flexbox використав display:inline-block + text-align:center -->
@@ -36,15 +36,16 @@
     </header>
 
     <main class="app-main">
-      <section class="main-heading-block">
-        
-          <!-- замість flexbox використав display:inline-block + text-align:center -->
-        <h1>Про мене</h1>
+      <section class="main-heading-block app-wrapper ">
+
+        <!-- замість flexbox використав display:inline-block + text-align:center -->
+        <h1 class="main-heading">Про мене</h1>
         <div class="main-picture-block">
 
           <img src="./images/my_photo.jpg" alt="Моє фото">
         </div>
         <article class="article-biography">
+
           <h2>Біографія</h2>
           <p>Вітаю! Мене звати Чорний Валентин. Мені 26 років, я з міста Хмельницький, Україна.Працюю у
             Комунальному
@@ -53,14 +54,16 @@
           </p>
 
         </article>
+
       </section>
 
 
 
-      <div class="main-articles">
+      <div class="main-articles app-wrapper">
 
         <article class="article-education">
-          <h2>Освіта </h2>
+          <h2 class="article-heading">Освіта </h2>
+
           <p>Закінчив <abbr title="Буковинський державний медичний університет">БДМУ</abbr> та інтернатуру у <abbr
               title="Вінницький національний медичний університет">ВНМУ</abbr> , маю повну вищу медичну
             освіту.
@@ -68,14 +71,16 @@
 
         </article>
         <article class="arctice-expirience">
-          <h2>Досвід</h2>
+          <h2 class="article-heading">Досвід</h2>
+
           <p>Досвіду роботи у сфері ІТ в мене немає, раніше сам вивчав HTML та СSS, але без явного результату.
 
           </p>
 
         </article>
         <article class="article-introduction">
-          <h2>Знайомство з Beetroot</h2>
+          <h2 class="article-heading">Знайомство з Beetroot</h2>
+
           <p>Курси від компанії «Beetroot» мені порадив знайомий, що вже працює у сфері ІТ. Також я пройшов
             безкоштовний міні-курс з Frontend розробки, який мені дуже сподобався.
           </p>
@@ -83,36 +88,44 @@
         </article>
 
         <article class="article-purpose">
-          <h2>Моя мета</h2>
+
+          <h2 class="article-heading">Моя мета</h2>
+
           <p>Я тут для того щоб оволодіти навичками Fontend- розробника. В подальшому хочу знайти роботу та
             поступово
             перейти у нову для себе галузь!
           </p>
+
         </article>
+
       </div>
+
     </main>
 
-    <footer class="app-footer">
+    <footer class="app-footer app-wrapper">
       <div class="footer-social-media-block">
         <nav class="footer-navigation">
-          
+
           <!-- замість flexbox використав display:inline-block + text-align:center -->
           <ul class="footer-list">
-            <li class="footer-list-item"><a href="https://t.me/nordelav" target="_blank" rel="noopener noreferrer"><img
+            <li class="footer-list-item"><a href="https://t.me/nordelav" target="_blank" rel="noopener noreferrer"><img class="list-icon"
                   src="./images/logo/1.svg" alt="Telegram"></a></li>
             <li class="footer-list-item"><a href="https://www.facebook.com/profile.php?id=100017333162685&locale=uk_UA"
-                target="_blank" rel="noopener noreferrer"><img src="./images/logo/2.svg" alt="Facebook"></a>
+                target="_blank" rel="noopener noreferrer"><img class="list-icon" src="./images/logo/2.svg" alt="Facebook"></a>
             </li>
             <li class="footer-list-item"><a href="https://github.com/Nordelav" target="_blank"
                 rel="noopener noreferrer">
-                <img src="./images/logo/3.svg" alt=""></a></li>
+                <img class="list-icon" src="./images/logo/3.svg" alt=""></a></li>
             <!-- Додав посилання на email та номер телефону-->
-                <li class="footer-list-item"><a href="mailto:4ernuj@ukr.net">4ernuj@ukr.net</a></li>
+            <li class="footer-list-item"><a href="mailto:4ernuj@ukr.net">4ernuj@ukr.net</a></li>
             <li class="footer-list-item"><a href="tel:+380988888888">+380988888888</a></li>
           </ul>
         </nav>
+
       </div>
+
     </footer>
+
   </div>
 
 </body>

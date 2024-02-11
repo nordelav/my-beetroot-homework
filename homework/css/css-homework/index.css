@@ -7,7 +7,7 @@
 a,
 a:hover {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 /*Ширина картинки бу стільки, скільки матиме її обгортка  */
 img {
@@ -15,46 +15,42 @@ img {
 }
 /* Підключено шрифт Roboto */
 body {
-
   font-family: "Roboto", sans-serif;
   font-style: 16px;
   color: #000;
   font-weight: 400;
+  min-height: 100vh;
+  background-color: #f4f1bb;
 }
-/* Данні блоки матимуть видиму границю */
-.main-heading-block,.app-header,.app-footer,.main-articles{
+/*  Блоки з данним класом матимуть видиму границю */
+.app-wrapper {
   padding: 20px 20px;
-  border: 1px solid #000 ;
-  
+  border: 1px solid #000;
 }
 .app-header {
-  background-color: #FCBCB8;
-  border: 1px solid #000 ;
+  background-color: #fcbcb8;
+  border: 1px solid #000;
   border-radius: 0 0 5px 5px;
 }
-.header-menu{
+.header-menu {
   text-align: center;
 }
-.header-menu-list{
+.header-menu-list {
   list-style: none;
 }
 /* замість flexbox для меню */
-.menu-list-item{
+.menu-list-item {
   display: inline-block;
   margin-left: 15px;
 }
 
-
-
-.main-heading-block{
-  background-color: #F4F1BB;
-  
+.main-heading-block {
+  background-color: #f4f1bb;
 }
-.main-heading-block h1{
+.main-heading {
   text-align: center;
   font-weight: 900;
   font-size: 20px;
-  
 }
 /* Створення "круглої фотографії" */
 .main-picture-block {
@@ -66,19 +62,17 @@ body {
   overflow: hidden;
 }
 
-
 .article-biography {
   display: inline-block;
   width: 400px;
   border: 1px solid black;
   border-radius: 5px;
-
 }
 .main-articles {
-  background-color: #9BC1BC;
+  background-color: #9bc1bc;
   border-radius: 5px;
 }
-.main-articles h2{
+.article-heading {
   font-weight: 500px;
   font-size: 18px;
   text-align: center;
@@ -86,22 +80,19 @@ body {
 
 .app-footer {
   border-radius: 5px 5px 0 0;
-  background-color: #FCBCB8;
+  background-color: #fcbcb8;
 }
-.footer-list{
+.footer-list {
   text-align: center;
 }
-.footer-list{
+.footer-list {
   list-style: none;
 }
 /* замість flexbox для меню */
-.footer-list-item{
+.footer-list-item {
   display: inline-block;
   margin: 0 10px;
-  
 }
-.footer-list-item img {
+.list-icon {
   width: 30px;
-
 }
-
