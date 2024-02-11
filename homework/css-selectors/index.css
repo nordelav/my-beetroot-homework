@@ -85,34 +85,41 @@ a:hover {
 .list-item:nth-child(even) {
   background-color: #88839e;
 }
+
 .list-item:nth-child(odd) {
   background-color: #7a7593;
 }
+
 .list-item {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  padding: 12px;
   transition: background-color 0.15s ease-in;
   color: #ffff;
 }
+
 .list-item:hover {
   background-color: #625e77;
   border-color: #ffff;
 }
+
 .list-item:active {
   background-color: #ff8984;
 }
+
 .list-label {
+  padding: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
+
 .list-label > input[type="checkbox"] {
   width: 19px;
   height: 19px;
 }
-.list-label > input[type="checkbox"]:checked + span {
+
+.checkbox:checked + span {
   opacity: 0.5;
   text-decoration: line-through;
 }
@@ -124,6 +131,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .item-heading {
   font-size: 18px;
   margin-right: 4px;
