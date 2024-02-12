@@ -38,15 +38,14 @@ img {
   width: 100%;
 }
 
-
-
+/* Властивості wrapper */
 .wrapper {
   max-width: 1200px;
   padding-left: 13px;
   padding-right: 13px;
   margin: 0 auto;
 }
-
+/* Використовується flex */
 .header-wrapper {
   padding-top: 17px;
   padding-bottom: 17px;
@@ -55,6 +54,7 @@ img {
   align-items: center;
 }
 
+/* Використовується flex */
 .header-logo-block {
   display: flex;
   justify-content: center;
@@ -75,6 +75,7 @@ img {
 .header-nav {
 }
 
+/* Використовується flex */
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -87,6 +88,7 @@ img {
   color: #ffa520;
 }
 
+/* Використовується flex */
 .header-buttons-block {
   display: flex;
   justify-content: center;
@@ -114,15 +116,16 @@ img {
   margin-top: 71px;
 }
 
+/* Використовується flex */
 .first-section {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-items: space-between;
-
 }
 
+/* Використовується flex */
 .section-text-block {
   display: flex;
   flex-direction: column;
@@ -134,25 +137,23 @@ img {
 }
 
 .section-heading {
-  
   font-size: 44px;
 }
-.section-text{
+.section-text {
   margin-top: 30px;
 }
 
-.section-button{
+.section-button {
   margin-top: 20px;
-  padding:  13px ; 
+  padding: 13px;
   max-width: 180px;
   max-height: 50px;
   border-radius: 4px;
-  background-color: #FF9900;
+  background-color: #ff9900;
   text-align: center;
-  
+
   color: #fff;
   font-weight: 700;
-  
 }
 
 .section-picture {
