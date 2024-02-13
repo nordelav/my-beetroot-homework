@@ -1,0 +1,5 @@
+:root{
+  --border-color:#2B81AC;
+  --inner-color:#3399CC;
+  
+}

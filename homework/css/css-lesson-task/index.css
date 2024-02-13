@@ -1,56 +1,56 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-size: 18px;
-  font-family:'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 .app {
   padding-left: 66px;
-  
 }
-
 
 .header-figure-blocks {
   margin-top: 29px;
   width: 100px;
   height: 100px;
 }
+
 .qube-red {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
+
 .qube-green {
-  background-color: #00FF00;
+  background-color: #00ff00;
 }
+
 .qube-blue {
-  background-color: #0000FF;
+  background-color: #0000ff;
 }
 
 .grey-circle {
   border-radius: 50%;
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
 }
-.main-first-article-block,.main-secound-article-block {
+
+.main-first-article-block,
+.main-secound-article-block {
   margin-top: 29px;
   width: 500px;
-
 }
-
 
 .secound-article-heading {
   margin: 30px;
   display: block;
   font-size: 20px;
   font-weight: 400;
-
 }
 .secound-article-span {
   font-weight: 700;
 }
-.secound-article-paragraph{
+.secound-article-paragraph {
   font-style: italic;
   margin-bottom: 100px;
 }

@@ -1,0 +1,48 @@
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  src: url(../font/lucidasansunicode.ttf);
+}
+
+body{
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  height: 100vh;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Властивості wrapper */
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
