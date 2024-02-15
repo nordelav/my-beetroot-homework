@@ -1,0 +1,153 @@
+.app {
+  background-color: var(--inner-color);
+  border: solid 25px var(--border-color);
+  padding: 0 auto;
+}
+h2 {
+  font-size: var(--h2-fs);
+  font-weight: normal;
+}
+
+/* Властивості wrapper */
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+}
+
+.header-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 60px;
+  padding-bottom: 37px;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.header-icon {
+  display: flex;
+  font-size: var(--header-i-size);
+}
+
+.main {
+}
+
+.main-wrapper {
+}
+
+/* В блоці погоди немає всередині border - це pudding та gap   */
+.weather-block {
+  width: 100%;
+  max-height: 588px;
+  height: 100%;
+  background-color: var(--color-white);
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.wather-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.row-content {
+  padding: 26px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  opacity: 0.7;
+}
+/* Підключено кастомний курсор, що був у макеті */
+.row-content:hover {
+  opacity: 1;
+  cursor: url(./assets/img/cursor.png), auto;
+}
+.content-text {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.big-container {
+  width: 50%;
+}
+.normal-container {
+  width: 25%;
+}
+
+.biggest-container {
+  width: 100%;
+}
+
+/* first row first block */
+.fst-r-fst-b {
+  background-color: #3399cc;
+}
+/* first row secound block */
+.fst-r-snd-b {
+  background-color: #33cccc;
+}
+/* first row third block */
+.fst-r-thd-b {
+  background-color: #996699;
+}
+/* secound row first block */
+.snd-r-fst-b {
+  background-color: #c24747;
+}
+/* secound row secound block */
+.snd-r-snd-b {
+  background-color: #e2674a;
+}
+/* secound row third block */
+.snd-r-thd-b {
+  background-color: #ffcc66;
+}
+/* secound row fourth block */
+.snd-r-fth-b {
+  background-color: #99cc99;
+}
+/* third row first block */
+.thd-r-fst-b {
+  background-color: #669999;
+}
+/* third row secound block */
+.thd-r-snd-b {
+  background-color: #cc6699;
+}
+/* third row third block */
+.thd-r-thd-b{
+  background-color: #339966;
+}
+/* fourth row first block */
+.fth-r-fst-b {
+  background-color: #666699;
+}
+.main-icon {
+  font-size: var(--main-i-size);
+  display: flex;
+}
+.footer {
+}
+
+.footer-text {
+  text-align: left;
+  padding-top: 35px;
+  padding-bottom: 119px;
+}

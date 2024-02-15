@@ -1,20 +1,22 @@
-
-
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
-@font-face{
-  font-family: 'Lucida Sans Unicode', sans-serif;
+
+/* Файл шрифту знайдено і підключено вручну */
+@font-face {
+  font-family: "Lucida Sans Unicode", sans-serif;
   src: url(../font/lucidasansunicode.ttf);
 }
 
-body{
-  font-family: 'Lucida Sans Unicode', sans-serif;
+
+body {
+  font-family: "Lucida Sans Unicode", sans-serif;
   height: 100vh;
-  
+  color: var(--color-white);
+  font-size: var(--fs);
 }
 
 h1,
@@ -38,11 +40,3 @@ img {
   width: 100%;
 }
 
-/* Властивості wrapper */
-.wrapper {
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1170px;
-  margin: 0 auto;
-  width: 100%;
-}

@@ -1,5 +1,9 @@
-:root{
-  --border-color:#2B81AC;
-  --inner-color:#3399CC;
-  
+:root {
+  --border-color: #2b81ac;
+  --inner-color: #3399cc;
+  --color-white: #fff;
+  --h2-fs: 1.375em;
+  --fs: 16px;
+  --header-i-size: 1.6875em;
+  --main-i-size: 2.625em;
 }

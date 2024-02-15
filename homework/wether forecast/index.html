@@ -1,167 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../../favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- * Normalize -->
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <!-- * Weather icons  -->
+    <link rel="stylesheet" href="./css/weather-icons.min.css" />
+    <!-- * Variables -->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <!-- * Main css + linked font-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- * Index css  -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- * Normalize -->
-  <link rel="stylesheet" href="../../css/normalize.css">
-  <!-- * Fonts -->
-  <!-- * Weather icons  -->
-  <link rel="stylesheet" href="./css/weather-icons.min.css">
-  <!-- * Main css -->
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- * Variables -->
-  <link rel="stylesheet" href="./css/variables">
-  <!-- * Index css  -->
-  <link rel="stylesheet" href="./index.css">
-</head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="wrapper header-text">
+          <h2><a href="../../index.html">Home</a></h2>
+          <h2>CSS Weather Forecast</h2>
+          <i class="header-icon wi wi-sunset"></i>
+        </div>
+      </header>
 
-<body>
-  <div class="app">
-    <header class="header">
-      header
-    </header>
+      <main class="main">
+        <div class="wrapper main-wrapper">
+          <div class="weather-block">
+            <!-- wather block was divided  to 4 rows-->
+            <div class="wather-row">
+              <!-- first row has 3 elements -->
+              <div class="fst-r-fst-b row-content big-container">
+                <h2>Lisbon</h2>
 
-    <main class="main">
-      <div class="wrapper main-wrapper">
-        <h2>CSS Weather Forecast <i class="wi wi-sunset"></i></h2>
-        <div class="weather-block">
-          <div class="wather-row">
+                <div class="content-text">
+                  <h2>21℃</h2>
 
-            <div class="row-content">
+                  <i class="main-icon wi wi-wu-sunny"></i>
+                </div>
+              </div>
 
-              <h2>Lisbon</h2>
+              <div class=" row-content normal-container fst-r-snd-b">
+                <h2>Paris</h2>
 
-              <p>21℃</p>
-              <i class="wi wi-wu-sunny"></i>
+                <div class="content-text">
+                  <h2>11℃</h2>
 
+                  <i class="main-icon wi wi-day-rain-mix"></i>
+                </div>
+              </div>
+
+              <div class=" row-content normal-container fst-r-thd-b">
+                <h2>Belgrade</h2>
+                <div class="content-text">
+                  <h2>15℃</h2>
+
+                  <i class="main-icon wi wi-day-cloudy"></i>
+                </div>
+              </div>
             </div>
 
-            <div class="row-content">
+            <div class="wather-row">
+              <!-- secound row has 4 element-->
+              <div class=" row-content normal-container snd-r-fst-b">
+                <h2>Venice</h2>
+                <div class="content-text">
+                  <h2>21℃</h2>
 
-              <h2>Paris</h2>
+                  <i class="main-icon wi wi-day-cloudy-high"></i>
+                </div>
+              </div>
+              
+              <div class=" row-content normal-container snd-r-snd-b">
+                <h2>Tel-avive</h2>
+                <div class="content-text">
+                  <h2>32℃</h2>
 
-              <p>11℃</p>
+                  <i class="main-icon wi wi-hot"></i>
+                </div>
+              </div>
 
-              <i class="wi wi-day-rain-mix"></i>
+              <div  class=" row-content normal-container snd-r-thd-b">
+                <h2>Cair</h2>
 
+                <div class="content-text">
+                  <h2>21 ℃</h2>
+
+                  <i class="main-icon wi wi-wu-sunny"></i>
+                </div>
+              </div>
+
+              <div class="row-content normal-container snd-r-fth-b ">
+                <h2>New-York</h2>
+
+                <div class="content-text">
+                  <h2>17℃</h2>
+
+                  <i class="main-icon wi wi-day-sleet-storm"></i>
+                </div>
+              </div>
+            </div>
+            <div class="wather-row">
+              <!-- third row has 3 elements -->
+              <div  class="row-content normal-container thd-r-fst-b">
+                <h2>New-Delhi</h2>
+
+                <div class="content-text">
+                  <h2>17℃</h2>
+
+                  <i class="main-icon wi wi-rain-wind"></i>
+                </div>
+              </div>
+
+              <div  class="row-content big-container thd-r-snd-b">
+                <h2>San-Francisco</h2>
+
+                <div class="content-text">
+                  <h2>15℃</h2>
+
+                  <i class="main-icon wi wi-day-sunny-overcast"></i>
+                </div>
+              </div>
+
+              <div class="row-content normal-container thd-r-thd-b">
+                <h2>Tokyo</h2>
+
+                <div class="content-text">
+                  <h2>8℃</h2>
+
+                  <i class="main-icon wi wi-night-clear"></i>
+                </div>
+              </div>
             </div>
 
-            <div class="row-content">
+            <div class="wather-row">
+              <!-- fourth row has 1 element -->
+              <div class="row-content biggest-container fth-r-fst-b">
+                <h2>Sydney</h2>
 
-              <h2>Belgrade</h2>
+                <div class="content-text">
+                  <h2>25℃</h2>
 
-              <p>15℃</p>
-
-              <i class="wi wi-day-cloudy"></i>
+                  <i class="main-icon wi wi-night-partly-cloudy"></i>
+                </div>
+              </div>
             </div>
-
-          </div>
-
-          <div class="wather-row">
-
-            <div class="row-content">
-
-              <h2>Venice</h2>
-
-              <p>21℃</p>
-              <i class="wi wi-day-cloudy-high"></i>
-
-            </div>
-
-            <div class="row-content">
-
-              <h2>Tel-avive</h2>
-
-              <p>32℃</p>
-
-              <i class="wi wi-hot"></i>
-
-            </div>
-
-            <div class="row-content">
-
-              <h2>Cair</h2>
-
-              <p>21 ℃</p>
-
-              <i class="wi wi-wu-sunny"></i>
-
-            </div>
-
-            <div class="row-content">
-
-              <h2>New-York</h2>
-
-              <p>17℃</p>
-
-              <i class="wi wi-day-sleet-storm"></i>
-            </div>
-
-          </div>
-          <div class="wather-row">
-
-            <div class="row-content">
-
-              <h2>New-Delhi</h2>
-
-              <p>17℃</p>
-
-              <i class="wi wi-rain-wind"></i>
-
-            </div>
-
-            <div class="row-content">
-
-              <h2>San-Francisco</h2>
-
-              <p>15℃</p>
-
-              <i class="wi wi-day-sunny-overcast"></i>
-
-            </div>
-
-            <div class="row-content">
-
-              <h2>Tokyo</h2>
-
-              <p>8℃</p>
-
-              <i class="wi wi-night-clear"></i>
-
-            </div>
-
-
-
-          </div>
-
-          <div class="wather-row">
-
-            <div class="row-content">
-
-              <h2>Sydney</h2>
-
-              <p>25℃</p>
-
-              <i class="wi wi-night-partly-cloudy"></i>
-
-            </div>
-
           </div>
         </div>
+      </main>
 
-        <p>Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
-
-      </div>
-
-    </main>
-
-    <footer class="footer">
-
-    </footer>
-  </div>
-
-</body>
-
+      <footer class="footer">
+        <div class="wrapper footer-text">
+          <p>
+            Have a nice day and don't forget umbrella if you are in New Delhi
+            now!
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
