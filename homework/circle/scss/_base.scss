@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  background-color: #111;
+}
+.app{
+  
+}
+.wrapper {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+// .main{
+  
+// }
+.main-wrapper {
+  height:calc(100vh - 80px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  position: relative;
+  max-width: 707px;
+  width: 100%;
+  max-height: 707px;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

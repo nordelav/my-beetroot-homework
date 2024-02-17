@@ -1,12 +1,11 @@
-
+@import'./normalize';
+@import'./variables';
+@import'./main';
+@import'./base';
+// header
+@import'./components/header/index';
 // lines
 @import'./elements/lines/index';
 // Circles
 @import'./elements/circles/index';
-.wrapper {
-}
-.main-wrapper {
-}
-.square {
-}
 

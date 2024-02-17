@@ -1,19 +1,20 @@
 
 .line {
-  &-top {
-  }
-  &-top-left {
-  }
-  &-top-right {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color:  #f1f1f1;
+  z-index: 2;
+  
+  &-vertical {
+    rotate: 90deg;
   }
   &-left {
+    rotate: 45deg;
   }
   &-right {
+    rotate: 135deg;
   }
-  &-bottom {
-  }
-  &-bottom-left {
-  }
-  &-bottom-right {
-  }
+  
+
 }
