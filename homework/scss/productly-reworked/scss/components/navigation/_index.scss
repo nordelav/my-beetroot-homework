@@ -1,0 +1,11 @@
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-item:first-child {
+  color: #ffa520;
+}

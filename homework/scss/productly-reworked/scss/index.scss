@@ -1,0 +1,19 @@
+@import'./normalize.scss';
+
+@import'./main';
+
+@import './base';
+
+@import'./variables';
+// header
+@import'./components/header/index.scss';
+// logo
+@import'./components/logo/index.scss';
+// navigation
+@import'./components/navigation/index.scss';
+// main
+@import'./components/main/index.scss';
+// section
+@import'./components/section/index.scss';
+// buttons
+@import'./elements/buttons/index';
