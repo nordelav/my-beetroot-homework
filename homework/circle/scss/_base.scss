@@ -9,9 +9,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-// .main{
+.main{
 
-// }
+}
 .main-wrapper {
   height: calc(100vh - 80px);
   margin: 0 auto;
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 4s ease-in-out;
 }
 .square:hover {
   
@@ -38,6 +38,6 @@ transform:rotate(360deg);
   
 .square:active{
 
-transform:rotate(-360deg) scale(0.7);
+transform:rotate(-360deg) scale(0.6);
 
 }

@@ -8,7 +8,7 @@
   border-radius: 50%;
   height: 100%;
   background-color:var(--color-violet);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 
   &-top {
     top: 0;
@@ -88,17 +88,15 @@
     align-items: center;
   }
 
-  &-big:active {
-    transform: scale(1.6);
-  }
-
-  &-big:hover {
-  }
-
+ 
   &-inside-big {
     max-width: 200px;
     max-height: 200px;
     background-color: var(--color-dark-violet);
     border-color: var(--color-violet);
+  }
+
+  &-inside-big:active{
+    transform: scale(1.6);
   }
 }
