@@ -3,7 +3,7 @@
   position: absolute;
   width: calc(100% - 50px);
   height: 3px;
-  background-color:  #f1f1f1;
+  background-color: var(--color-white);
   z-index: 2;
   
   &-vertical {

@@ -4,85 +4,83 @@
   max-width: 100px;
   width: 100%;
   max-height: 100px;
-  border: 12px solid #f1f1f1;
+  border: 12px solid var(--color-white);
   border-radius: 50%;
   height: 100%;
-  background-color: #480E63;
+  background-color:var(--color-violet);
   transition: all 0.5s ease-in-out;
 
   &-top {
     top: 0;
   }
 
-  &-top:hover{
-    transform: translate(0,100%);
+  &-top:hover {
+    transform: translate(0, 100%);
   }
 
-  &-top-left{
+  &-top-left {
     left: 60px;
     top: 60px;
-    
   }
 
-  &-top-left:hover{
-    transform: translate(100%,100%);
+  &-top-left:hover {
+    transform: translate(100%, 100%);
   }
 
-  &-top-right{
+  &-top-right {
     top: 60px;
     right: 60px;
   }
 
-  &-top-right:hover{
-    transform: translate(-100%,100%);
+  &-top-right:hover {
+    transform: translate(-100%, 100%);
   }
 
-  &-left{
+  &-left {
     left: 0;
   }
 
-  &-left:hover{
-    transform: translate(100%,0);
+  &-left:hover {
+    transform: translate(100%, 0);
   }
 
   &-right {
     right: 0;
   }
 
-  &-right:hover{
-    transform: translate(-100%,0);
+  &-right:hover {
+    transform: translate(-100%, 0);
   }
 
   &-bottom {
     bottom: 0;
   }
 
-  &-bottom:hover{
-    transform: translate(-0,-100%);
+  &-bottom:hover {
+    transform: translate(-0, -100%);
   }
 
-  &-bottom-left{
+  &-bottom-left {
     bottom: 60px;
-    left:60px;
+    left: 60px;
   }
 
-  &-bottom-left:hover{
-    transform: translate(100%,-100%);
+  &-bottom-left:hover {
+    transform: translate(100%, -100%);
   }
 
-  &-bottom-right{
+  &-bottom-right {
     bottom: 60px;
     right: 60px;
   }
 
-  &-bottom-right:hover{
-    transform: translate(-100%,-100%);
+  &-bottom-right:hover {
+    transform: translate(-100%, -100%);
   }
 
   &-big {
-    position: static;
-    border-color: #480E63;
-    background-color: #f1f1f1;
+    border-color: var(--color-violet);
+    background-color: var(--color-white);
     max-width: 300px;
     max-height: 300px;
     display: flex;
@@ -90,22 +88,17 @@
     align-items: center;
   }
 
-  &-big:active{
-    
+  &-big:active {
     transform: scale(1.6);
   }
 
-  &-big:hover{
-   
-
+  &-big:hover {
   }
-  
+
   &-inside-big {
     max-width: 200px;
     max-height: 200px;
-    background-color: #290148;
-    border-color: #480E63;
-
+    background-color: var(--color-dark-violet);
+    border-color: var(--color-violet);
   }
-  
 }
