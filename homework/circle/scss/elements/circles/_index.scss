@@ -1,14 +1,14 @@
 .circle {
   position: absolute;
   z-index: 3;
-  max-width: 76px;
+  max-width: 100px;
   width: 100%;
-  max-height: 76px;
+  max-height: 100px;
   border: 12px solid #f1f1f1;
   border-radius: 50%;
   height: 100%;
   background-color: #480E63;
-  transition: transform 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   &-top {
     top: 0;
@@ -80,21 +80,32 @@
   }
 
   &-big {
+    position: static;
     border-color: #480E63;
     background-color: #f1f1f1;
-    max-width: 276px;
-    max-height: 276px;
+    max-width: 300px;
+    max-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  &-big:active{
+    
+    transform: scale(1.6);
+  }
+
+  &-big:hover{
+   
+
+  }
+  
   &-inside-big {
-    max-width: 176px;
-    max-height: 176px;
+    max-width: 200px;
+    max-height: 200px;
     background-color: #290148;
     border-color: #480E63;
 
   }
-
+  
 }

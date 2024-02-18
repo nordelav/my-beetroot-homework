@@ -1,7 +1,7 @@
 
 .line {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 50px);
   height: 3px;
   background-color:  #f1f1f1;
   z-index: 2;
