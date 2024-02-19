@@ -1,6 +1,9 @@
 @import'./normalize';
+// CSS variables
 @import'./variables';
+// null-settings
 @import'./main';
+// base css setting for page
 @import'./base';
 // header
 @import'./components/header/index';
