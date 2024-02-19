@@ -30,11 +30,15 @@ body {
   align-items: center;
   transition: transform 4s ease-in-out;
 }
+
+
+// ! Обертання активується від hover на square 
+// ! а не на circle-big
 .square:hover {
   
-transform:rotate(360deg);
+  transform:rotate(360deg);
 
-}
+  }
   
 .square:active{
 
