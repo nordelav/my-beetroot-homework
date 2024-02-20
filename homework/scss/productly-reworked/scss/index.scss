@@ -1,19 +1,23 @@
-@import'./normalize.scss';
+@import'./normalize';
+
+@import'./fonts';
+
+@import'./variables';
 
 @import'./main';
 
 @import './base';
 
-@import'./variables';
+
 // header
-@import'./components/header/index.scss';
+@import'./components/header/index';
 // logo
-@import'./components/logo/index.scss';
+@import'./components/logo/index';
 // navigation
-@import'./components/navigation/index.scss';
+@import'./components/navigation/index';
 // main
-@import'./components/main/index.scss';
+@import'./components/main/index';
 // section
-@import'./components/section/index.scss';
+@import'./components/section/index';
 // buttons
 @import'./elements/buttons/index';

@@ -3,9 +3,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-}
+  transition: var(--t-normal);
 
-.list-item:first-child {
-  color: #ffa520;
+  &-item:hover {
+    color: var(--color-orange);
+  }
+  &-link{
+    display: flex;
+    padding:10px;
+  }
 }

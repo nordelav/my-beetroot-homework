@@ -1,6 +1,12 @@
 .header{
-
-
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
   &-wrapper {
     padding-top: 17px;
     padding-bottom: 17px;
@@ -8,26 +14,14 @@
     justify-content: space-between;
     align-items: center;
   }
-  &-logo-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  }
+
   &-buttons-block {
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 32px;
   }
-  &-button {
-    text-align: center;
-    padding: 13px 0;
-    min-height: 46px;
-    min-width: 110px;
-    font-weight: 500;
-    border-radius: 4px;
-  }
+
 
 }
 

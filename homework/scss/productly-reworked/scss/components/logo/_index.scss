@@ -1,9 +1,8 @@
 .logo {
-  max-width: 30px;
+  display: flex;
+  max-width: 200px;
+  width: 100%;
   max-height: auto;
+  height: fit-content;
 }
 
-.logo-text {
-  max-height: 30px;
-  max-width: 154px;
-}

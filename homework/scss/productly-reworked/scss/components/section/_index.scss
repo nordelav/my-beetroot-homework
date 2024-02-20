@@ -1,5 +1,6 @@
 /* Використовується flex */
 .section{
+  
 
   &-heading{
   font-size: 44px;
@@ -10,21 +11,14 @@
   }
 
   &-button{
-  display:flex;
-  align-items: center;
-  justify-content:center;  
+    
+  
   margin-top: 20px;
   padding: 13px;
-  max-width: 180px;
-  max-height: 50px;
-  border-radius: 4px;
-  background-color: #ff9900;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
   }
 
   &-picture{
     min-width: 644px;
+    display: flex;
   }
 }
