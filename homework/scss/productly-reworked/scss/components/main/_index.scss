@@ -1,13 +1,14 @@
 .main {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
   height: calc(100vh - var(--header-height));
   padding-top: 70px;
   padding-bottom: 100px;
   
 
   &-wrapper {
-    
+    display: flex;
   }
 
   &-section {
