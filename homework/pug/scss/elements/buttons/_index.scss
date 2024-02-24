@@ -1,0 +1,35 @@
+.button{
+  cursor: pointer;
+  height: 45px;
+  padding:  0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: 1px solid var(--color-orange);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: var(--t-normal);
+
+  &:hover{
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+    color: var(--color-white);
+  }
+  &-transparent{
+    background-color: transparent;
+    color: var(--color-black);
+    border-color:var(--color-border-blue);
+    
+  }
+
+  &-transparent:hover{
+    
+  }
+  &-big{
+    font-family: 'Popins', sans-serif;
+    font-weight: bold;
+    padding:0 40px
+  }
+}

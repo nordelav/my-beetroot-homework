@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // border: 1px solid red;
+  &::selection {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 900;
+}
+
+h1 {
+  cursor: default;
+}
+
+p {
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+button {
+  border: none;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "start": "pug -w src/index.pug --out ."
+  },
+  "keywords": [
+    "pug",
+    "html",
+    "scss",
+    "css"
+  ],
+  "author": "nordlav another.sad.world@gmail.com",
+  "license": "ISC"
+}
