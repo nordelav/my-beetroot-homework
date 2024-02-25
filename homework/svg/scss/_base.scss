@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+ ::selection{
+  color: #fff;
+  background-color:#3DB370;
+ } 
+}
+
+body{
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fs-standart);
+  border-color: var(--c-bcgr);
+  color: var(--c-text);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  
+  &-logo{
+    color: #3DB370;
+  }
+
+}
+h1,h2,h3,h4,h5{
+  margin:0;
+}
+
+a, a:hover{
+  color:var(--c-text);
+  text-decoration: none;
+}
+ul{
+  list-style:none ;
+}
+
+img{
+  width: 100%;
+}
+
+h1{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.app{
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+

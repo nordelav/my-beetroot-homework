@@ -1,0 +1,26 @@
+.social-list{
+  display: flex;
+  gap: 10px;
+}
+.list-item{
+  display: flex;
+  background-color: #ffff;
+  border-radius: 6px;
+  padding: 9px;
+  align-items: center;
+  justify-content: center;
+  max-width: 38px;
+  width: 100%;
+  font-size: 20px;
+  color: #0D0D0D;
+ 
+
+}
+.li-link{
+  display: flex;
+  transition: color 1s linear;
+  &:hover{
+    color: var(--c-green-base);
+  }
+
+}

@@ -1,0 +1,9 @@
+mixin section-item(svg, heading)
+  .item.section-item
+    .item-icon-box
+      svg.icon(class=svg)
+          use(xlink:href='#'+svg)
+    h3.item-heading=heading 
+    p.item-text Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+
+    a.item-link(href="#") Learn more    

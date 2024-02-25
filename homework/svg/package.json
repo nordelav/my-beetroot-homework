@@ -1,0 +1,17 @@
+{
+  "name": "svg-test",
+  "version": "1.0.0",
+  "description": "svg-homework",
+  "main": "index.js",
+  "scripts": {
+    "start": "pug -w src/index.pug --out ."
+  },
+  "keywords": [
+    "\"html\"",
+    "\"css\"",
+    "\"pug\"",
+    "\"svg\""
+  ],
+  "author": "nordelav",
+  "license": "ISC"
+}

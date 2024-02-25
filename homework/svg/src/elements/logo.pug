@@ -1,0 +1,6 @@
+mixin logo(classes,text)
+  a.logo-block(class=classes href="../../index.html")
+    svg.icon.icon-logo
+        use(xlink:href='#icon-logo')
+    .logo-text
+      h2=text  
