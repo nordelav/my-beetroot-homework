@@ -47,20 +47,24 @@
   }
 
   &:hover{
+    // * При наведенні границя блоку змінює колір
     border-color: var(--c-green-base);
     .item-icon-box{
+      // * При наведенні границя іконки змінює колір
       border-color: var(--c-green-base);
+      // ! - Колір самої іконки не змінюється
+      // ! -<TODO : додати змінку кольорів іконки
           .color-basis{
-            fill: #52C29D;
+            fill:#52C29D;
           }
           .color-light{
-            fill: #CAEFF2;
+            fill:#CAEFF2;
           }
           .color-lighter{
-            fill: #F4FEFF;
+            fill:#F4FEFF;
           }
           .color-the-lightest{
-            fill:#E1F4F5
+            fill:#E1F4F5;
           }
       
 

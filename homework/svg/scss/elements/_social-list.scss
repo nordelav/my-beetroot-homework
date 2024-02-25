@@ -18,7 +18,7 @@
 }
 .li-link{
   display: flex;
-  transition: color 1s linear;
+  transition: color 0.5s linear;
   &:hover{
     color: var(--c-green-base);
   }

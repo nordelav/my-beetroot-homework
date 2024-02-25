@@ -25,18 +25,18 @@ body{
   stroke: currentColor;
   fill: currentColor;
   
-  &-logo{
-    color: #3DB370;
-  }
-
+  
 }
 h1,h2,h3,h4,h5{
   margin:0;
 }
 
-a, a:hover{
-  color:var(--c-text);
+a {
+  color: inherit;
   text-decoration: none;
+}
+a:hover{
+  color: none;
 }
 ul{
   list-style:none ;
