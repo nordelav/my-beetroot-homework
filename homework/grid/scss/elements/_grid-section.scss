@@ -1,0 +1,17 @@
+.grid {
+  &-section {
+    text-align: center;
+  }
+  &-heading {
+    font-family: var(--heading-ff);
+    font-size: var(--heading-fs);
+    font-weight: 400;
+  }
+  &-block {
+    padding-top:80px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}

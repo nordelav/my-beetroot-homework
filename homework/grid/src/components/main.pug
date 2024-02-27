@@ -1,0 +1,46 @@
+mixin main
+    main.main 
+        .wrapper.main-wrapper
+          section.grid-section
+            +grid-heading('Architectural Photography')
+            //- * Усі grid-block задають display grid
+            .grid-block
+              //- * item - має стандартний розмір (1fr на 1fr) задає загальні властивості
+              +grid-item('block-1/1.jpg','item','Jezael Melgoza','5 June 2020')
+              //- * item-l-h : item -long-horizontal, блоки шириною span 2 
+              +grid-item('block-1/2.jpg','item-l-h','Tom W','30 March 2021')
+              +grid-item('block-1/3.jpg','item-l-h','Johan Mouchet','14 August 2019')
+              +grid-item('block-1/4.jpg','item','Federico Di Dio','29 October 2020')
+              +grid-item('block-1/5.jpg','item','Casey Horner','9 July 2021')
+              +grid-item('block-1/6.jpg','item-l-h','Alexander Rotker','22 April 2022')
+
+          section.grid-section
+            +grid-heading('Still Life Photography')
+            .grid-block
+              +grid-item('block-2/1.jpg','item','Robert Lukeman','30 June 2020')
+              +grid-item('block-2/2.jpg','item-l-h','Sean Oulashin','5 September 2019')
+              //- * item-s: item-square, блоки широню та довжиною span 2
+              +grid-item('block-2/3.jpg','item-s','John Fowler','10 August 2021')
+              //- * item-l-v: item-long-vertical, блоки довжиною span 2
+              +grid-item('block-2/4.jpg','item-l-v','Dave Hoefler','13 February 2021')
+              +grid-item('block-2/5.jpg','item-l-h','Léonard Cotte','5 September 2019')
+              +grid-item('block-2/6.jpg','item','Rob Mulally','30 May 2020')
+          
+          section.grid-section
+            +grid-heading('Portrait and Fashion Photography')
+            .grid-block
+              +grid-item('block-3/1.jpg','item','Pooja Chaudhary','30 June 2020')
+              +grid-item('block-3/2.jpg','item-l-v','Dom Hill','13 October 2021')
+              +grid-item('block-3/3.jpg','item','Seth Doyle','30 May 2020')
+              +grid-item('block-3/4.jpg','item','devn','30 June 2020')
+              +grid-item('block-3/5.jpg','item-l-v','Noah Buscher','13 February 2021')
+              +grid-item('block-3/6.jpg','item-l-v','Sincerely Media','7 January 2021')
+              +grid-item('block-3/7.jpg','item','Seth Doyle','30 June 2020')
+              +grid-item('block-3/8.jpg','item-l-h','Melissa Askew','29 April 2021')
+              +grid-item('block-3/9.jpg','item-l-h','Brooke Cagle','5 August 2019')
+              +grid-item('block-3/10.jpg','item','Clem Onojeghuo','1 July 2021')
+              
+
+        
+      
+          
