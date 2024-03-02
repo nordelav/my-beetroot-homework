@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-s);
+  font-size: 13px;
+  background-color: var(--c-bacground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-size: inherit;
+}
+h1{
+  font-size: 34px;
+  
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3{
+  font-weight: 400;
+  color: var(--ff);
+}
+a,
+a:hover {
+  color: var(--c-blue);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+sub{
+  font-size: 13px;
+}
+input[type=file]{
+  display: none;
+
+}
+
+.icon {
+  font-size: 16px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #969696;
+}
+
+.app {
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}

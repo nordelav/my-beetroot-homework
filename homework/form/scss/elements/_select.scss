@@ -1,0 +1,22 @@
+.select {
+  margin-top: 7px;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  min-height: 32px;
+  padding: 0 10px;
+  color: var(--c-form);
+  &:focus {
+    border-color: var(--c-blue);
+    outline: none;
+  }
+  &:invalid + .errors {
+    // visibility: visible;
+  }
+  
+
+  &-country {
+    option {
+      color: var(--c-form);
+    }
+  }
+}

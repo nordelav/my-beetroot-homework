@@ -1,0 +1,59 @@
+mixin form-left
+  form.form.form-left(action="get")
+    h2 Create an account 
+    .double-block
+      label.label
+        h3 First Name
+        input.input.input-first-name(required type="text", name="firstName")
+        div.errors
+          sub Error, fill form correctly
+
+      label.label
+        h3 Last Name
+        input.input.input-last-name(required type="text", name="lastName")
+        div.errors
+          sub Error, fill form correctly
+
+    .form-email-block
+      label.label.label-email
+        h3 E-mail
+        input.input(required type="email", name="email")
+        div.email
+          sub We'll never share your email with anyone else.
+    .form-sex-block 
+      label.label.label-sex
+        input.input-radio(required type="radio", name="sex", value="Male")
+        span.sex-type Male
+      label.label.label-sex
+        input.input-radio(required type="radio", name="sex", value="Female")
+        span.sex-type Female
+    .double-block
+      label.label
+        h3 Country  
+        select.select.select-country(required name="country")
+          option(value="") Select 
+          option(value="Canada") Canada 
+          option(value="USA") USA
+          option(value="France") France
+          option(value="Ukraine") Ukraine
+          option(value="Deutch") Deutch
+          option(value="United Kingdom") United Kingdom
+        div.errors
+          sub Error, fill form correctly
+      Label.label
+        h3 City    
+        input.input(required type="text" name="City")
+        div.errors
+          sub Error, fill form correctly
+    button.button.button-big(type="submit")
+      span Sign Up
+    
+    .bottom-upper-text
+      p By clicking the 'Sign Up' button, you confirm that you accept our 
+        a(href="#") Therms of use 
+        span  and 
+        a(href="") Privacy policy
+    .bottom-bottom-text  
+      p Have an account?
+      a(href="#") Log in  
+      

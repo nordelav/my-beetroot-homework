@@ -1,0 +1,67 @@
+mixin form-right 
+  form.form.form-right(action="get")
+    h2 Profile
+    .form-fotoload-block 
+
+      .photoblock
+
+        img(src="./assets/photo.jpg", alt="African")
+
+      label.label-photoload
+        .photoload-button
+          +icon('camera')     
+        input(required type="file", name="profilePhoto")
+        span.photoload-text Up to 1 MB (300x300 px)
+      .button-trash
+        +icon('trash')
+
+
+  
+    .double-block.form-name-block
+      label.label
+        h3 Name
+        input.input(required type="text", name="name")
+        div.errors
+          sub Error, fill form correctly
+
+      label.label
+        h3 E-mail
+        input.input.input-last-name(required type="email", name="email")
+        div.errors
+          sub Error, fill form correctly
+
+    .double-block
+      label.label
+        h3 Country  
+        select.select(required name="country")
+          option(value="") Select 
+          option(value="Canada") Canada 
+          option(value="USA") USA
+          option(value="France") France
+          option(value="Ukraine") Ukraine
+          option(value="Deutch") Deutch
+          option(value="United Kingdom") United Kingdom
+        div.errors
+          sub Error, fill form correctly
+      Label.label
+        h3 City    
+        input.input(required type="text" name="City")
+        div.errors
+          sub Error, fill form correctly
+
+    
+    .double-block.form-numbers-block
+      label.label
+        h3 Zip Code
+        input.input(required type="number", name="zipCode")
+        div.errors
+          sub Error, fill form correctly
+
+      label.label
+        h3 Phone Number
+        input.input(required type="number", name="phoneNumber")
+        div.errors
+          sub Error, fill form correctly          
+    button.button(type="submit") 
+      span Update
+

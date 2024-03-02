@@ -1,0 +1,26 @@
+
+.button {
+  background-color: var(--c-blue);
+  color: var(--c-white);
+  text-align: center;
+  padding:0 10px;
+  max-width: 150px;
+  font-weight: 500;
+  border-radius: 6px;
+  border-style: none;
+  min-height: 32px;
+
+  &-big {
+    max-width: none;
+  }
+
+  &-trash{
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    padding: 7px 0;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+  }
+
+}

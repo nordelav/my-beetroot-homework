@@ -1,0 +1,15 @@
+.main {
+  &-wrapper {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+.double-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.forms-block {
+  gap: 30px;
+}

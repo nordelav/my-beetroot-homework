@@ -1,0 +1,17 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pug -w src/index.pug --out ."
+  },
+  "keywords": [
+    "form",
+    "scss",
+    "html",
+    "css"
+  ],
+  "author": "nordelav another.sad.world@gmail.com",
+  "license": "ISC"
+}

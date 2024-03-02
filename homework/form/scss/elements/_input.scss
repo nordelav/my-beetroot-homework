@@ -1,0 +1,21 @@
+.input {
+  margin-top: 7px;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  padding: 0 10px;
+  min-height: 32px;
+  color: var(--c-forms);
+
+  &:focus {
+    outline: none;
+    border-color: var(--c-blue);
+  }
+  // !При неправильному веддені з'являється текст помилки- функція вимкнена
+  &:invalid + .errors {
+    // visibility: visible;
+  }
+  &-radio {
+    width: 20px;
+    height: 20px;
+  }
+}

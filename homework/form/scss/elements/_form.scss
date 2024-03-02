@@ -1,0 +1,57 @@
+.form {
+  border-radius: 6px;
+  background-color: var(--c-white);
+  display: flex;
+  flex-direction: column;
+  // Зважвючи га однаковий проміжок між елементами, використано gap
+  gap: 20px;
+  padding: 22px 35px;
+
+  &-left {
+  }
+
+  &-right {
+  }
+
+  &-email-block {
+  }
+
+  &-sex-block {
+    display: flex;
+    gap: 21px;
+  }
+
+  &-fotoload-block {
+    display: flex;
+    flex-direction: row ;
+    .photoblock{
+      max-width: 80px;
+      border-radius: 50%;
+      width: 100%;
+      margin-right: 20px;
+    
+    }
+  
+    
+  }
+}
+
+
+.bottom-upper-text {
+  color: var(--c-light-gre);
+  text-align: center;
+  border-bottom: 1px solid #E4E4E4;
+  p{
+    margin-bottom: 20px;
+  }
+}
+.bottom-bottom-text {
+  color: #969696;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+

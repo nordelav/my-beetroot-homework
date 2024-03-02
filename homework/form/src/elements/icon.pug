@@ -1,0 +1,5 @@
+//- Модифікований міксін, додає ще клас з відповідною назвою
+mixin icon(icon)
+  svg.icon(class=icon)
+    use(xlink:href=`#icon-${icon}`)
+
