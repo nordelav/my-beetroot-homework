@@ -5,6 +5,7 @@
   min-height: 32px;
   padding: 0 10px;
   color: var(--c-form);
+  appearance: none;
   &:focus {
     border-color: var(--c-blue);
     outline: none;

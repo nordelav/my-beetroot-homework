@@ -12,6 +12,10 @@
     gap: 8px;
   }
 
+  &-country{
+    position: relative;
+  }
+
   &-photoload {
     cursor: pointer;
     max-width: 138px;

@@ -31,7 +31,7 @@ mixin form-right
           sub Error, fill form correctly
 
     .double-block
-      label.label
+      label.label.label-country
         h3 Country  
         select.select(required name="country")
           option(value="") Select 
@@ -41,6 +41,7 @@ mixin form-right
           option(value="Ukraine") Ukraine
           option(value="Deutch") Deutch
           option(value="United Kingdom") United Kingdom
+        +icon('arrows')  
         div.errors
           sub Error, fill form correctly
       Label.label
