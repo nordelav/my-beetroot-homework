@@ -5,14 +5,19 @@
   display: flex;
   flex-direction: column;
 
+  &-email {
+    span {
+      margin-top: 5px;
+    }
+  }
+
   &-sex {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8px;
   }
-
-  &-country{
+  &-country {
     position: relative;
   }
 
@@ -39,9 +44,12 @@
     }
   }
 }
+
 // Використовується visability замість opasity
 .errors {
   visibility: hidden;
-  font-size: 10px;
+  margin-top: 5px;
+  line-height: 1;
+  font-size: 12px;
   color: red;
 }

@@ -10,10 +10,11 @@
     border-color: var(--c-blue);
     outline: none;
   }
-  &:invalid + .errors {
-    // visibility: visible;
+  &:invalid {
+    .errors {
+    visibility: visible;
+    }
   }
-  
 
   &-country {
     option {

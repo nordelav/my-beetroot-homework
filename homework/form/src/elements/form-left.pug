@@ -1,5 +1,5 @@
 mixin form-left
-  form.form.form-left(action="get")
+  form.form.form-left(="get")
     h2 Create an account 
     .double-block
       label.label
@@ -18,8 +18,11 @@ mixin form-left
       label.label.label-email
         h3 E-mail
         input.input(required type="email", name="email")
-        div.email
-          sub We'll never share your email with anyone else.
+        div.errors
+          sub Error, fill form correctly
+        span We'll never share your email with anyone else.
+        
+          
     .form-sex-block 
       label.label.label-sex
         input.input-radio(required type="radio", name="sex", value="Male")
@@ -30,7 +33,7 @@ mixin form-left
     .double-block
       label.label.label-country
         h3 Country  
-        select.select.select-country(required name="country")
+        select.select.select-country(required min-size="2" name="country")
           option(value="") Select 
           option(value="Canada") Canada 
           option(value="USA") USA

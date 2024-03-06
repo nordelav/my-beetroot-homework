@@ -10,9 +10,9 @@
     outline: none;
     border-color: var(--c-blue);
   }
-  // !При неправильному веддені з'являється текст помилки- функція вимкнена
+  // !При неправильному веддені з'являється текст помилки
   &:invalid + .errors {
-    // visibility: visible;
+    visibility: visible;
   }
   &-radio {
     width: 20px;
