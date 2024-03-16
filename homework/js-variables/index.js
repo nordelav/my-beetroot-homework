@@ -7,12 +7,12 @@ console.log(+(0.1 + 0.2).toFixed(1));
 console.log(+'1' + 2);
 
 // 3. Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
-const memorySize = +prompt('Введіть розмір флешки у гігабайтах', '1') * 1024;
-alert(
-  `На флешку поміститься ${Math.trunc(
-    memorySize / 820
-  )} файла розміром 860 мб. Вільного місця - ${memorySize % 820} мб`
-);
+// const memorySize = +prompt('Введіть розмір флешки у гігабайтах', '1') * 1024;
+// alert(
+//   `На флешку поміститься ${Math.trunc(
+//     memorySize / 820
+//   )} файла розміром 860 мб. Вільного місця - ${memorySize % 820} мб`
+// );
 
 // * Норма
 
@@ -41,18 +41,14 @@ alert(`Число задом на перед -  ${reverseNum}`);
 // * Максимум
 /* 1 Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. 
 Вивести суму нарахованих відсотків.*/
-// ! Я не впевнений у правильності 
+// ! Я не впевнений у правильності
 const depositSum = +prompt(
   'Введіть сумму у грн. Річний відсоток складає 5%',
   '2000'
 );
-
 const depositMonth = +prompt('Введіть кількість місяців', '2');
-const monthGrowth = +((depositSum * 0.05) / 12).toFixed(2);
-let depositResult = depositSum;
-let month = depositMonth;
-while (month!=0){
-  depositResult += monthGrowth;
-  month--;
-}
-alert( `Ви отримаєте  ${+depositResult.toFixed(2)} через ${depositMonth} місяців`);
+const depositResult = +(
+  depositSum *
+  (1 + (+((0.05 * depositMonth) / 2).toFixed(2)) ** 2)
+);
+alert(`Ви отримаєте  ${depositResult} через ${depositMonth} місяців`);
