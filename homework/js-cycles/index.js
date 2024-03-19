@@ -3,10 +3,8 @@
 дорослим (18-59) або пенсіонером (60 ...), передбач можливість введення невірних даних.*/
 
 const userAge = +prompt('Введіть ваш вік у вигляді числа');
-if (!userAge || userAge === NaN || userAge < 0) {
-  alert('Дані введено невірно! Введіть число ваш вік у вигляді числа!');
-} else {
-  if (userAge >= 0 && userAge <= 11) {
+if (userAge && userAge >= 0) {
+  if (userAge <= 11) {
     alert('Ти - дитина!');
   } else if (userAge >= 12 && userAge <= 17) {
     alert('Ти  - підліток');
@@ -15,6 +13,8 @@ if (!userAge || userAge === NaN || userAge < 0) {
   } else {
     alert('Ви  - пенсіонер');
   }
+} else {
+  alert('Дані введено невірно! Введіть число ваш вік у вигляді числа!');
 }
 
 /*Запитай у користувача число від 0 до 9 і 
@@ -149,11 +149,22 @@ alert(`Сумма до сплати - ${purchaseSum}`);
 let zeroNum = 0;
 let negativeNum = 0;
 let positiveNum = 0;
+let evenNum = 0;
+let oddNum = 0;
 for (let i = 0; i < 10; i++) {
   let n = +prompt(`Введіть число`);
 
   if (n > 0) {
     positiveNum += 1;
+    switch (n) {
+      case n % 2 === 0: {
+        evenNum += 1;
+        break;
+      }
+      default: {
+        oddNum += 1;
+      }
+    }
   } else if (n === 0) {
     zeroNum += 1;
   } else if (n < 0) {
@@ -161,7 +172,9 @@ for (let i = 0; i < 10; i++) {
   }
 }
 alert(
-  `Користувачем було введено ${positiveNum} додатніх чисел, ${negativeNum} від'ємних чисел та ${zeroNum} нулів`
+  `Користувачем було введено ${positiveNum} додатніх 
+  чисел з яких - ${evenNum} парних та ${oddNum} непарних, 
+  ${negativeNum} від'ємних чисел та ${zeroNum} нулів`
 );
 
 /* Зацикли відображення днів тижня таким чином: 
@@ -193,23 +206,39 @@ while (showDay) {
 Якщо користувач вказав, що його число> 50, то зміни діапазон на від 50 до 100. І так до тих пір, поки користувач не вибере == N
 */
 
-alert(`Загадайте число від 0 до 100`);
-let max = 100;
-let min = 0;
-let answer = false;
-let randomNumber;
-let asking;
-while (!answer) {
-  randomNumber = Math.floor(Math.random() * (max - min) + min);
-  answer = confirm(`Ваше число - ${randomNumber}`);
-  if (!answer) {
-    asking = confirm(`Це число більше за ${randomNumber}?`);
-    if (asking) {
-      min = randomNumber;
-    } else {
-      max = randomNumber;
+let max = +prompt(`Введіть максимум вибірки`);
+let min = +prompt(`Введіть мінімум вибірки`);
+alert(`Загадайте число від ${min} до ${max}`);
+let askingNumber;
+let answer=true;
+while (answer) {
+  askingNumber = Math.round(((max + min) / 2));
+  answer = prompt(
+    `Можливо, загадане число - ${askingNumber} Напишіть знаком, воно рівне, більше чи менше загаданому`
+  );
+
+  switch(answer){
+    case '>':{
+      min = askingNumber-1;
+      break;
+    } 
+    case `<`: {
+      max = askingNumber+1;
+      break;
     }
+    case `=`:{
+      alert(`Ура, я вгадав число !`);
+      break;
+    }
+    default:
+      alert(`Помилка  вводу`);
+      break;
+
   }
+  if(answer===`=`){
+    break;
+  }
+
 }
 
 //  Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно помножити на числа від 1 до 10.
@@ -228,39 +257,26 @@ const userMonth = +prompt(`Введіть місяць числом`);
 const userYear = +prompt(`Введіть рік чотирьохзначним числом`);
 let nextDate;
 let monthDays;
-
-if (userYear % 4 === 0 || userYear % 400 === 0) {
-  switch (userMonth) {
-    case 2:
+switch (userMonth) {
+  case 2:
+    if (userYear % 4 === 0 || userYear % 100 === 0) {
       monthDays = 29;
-      break;
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-      monthDays = 30;
-      break;
-    default:
-      monthDays = 31;
-      break;
-  }
-} else {
-  switch (userMonth) {
-    case 2:
+    } else {
       monthDays = 28;
-      break;
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-      monthDays = 30;
-      break;
-    default:
-      monthDays = 31;
-      break;
-  }
+    }
+
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    monthDays = 30;
+    break;
+
+  default:
+    monthDays = 31;
+    break;
 }
-console.log(monthDays);
 if (userDay == monthDays && userMonth === 12) {
   nextDate = `1.1.${userYear + 1}`;
 } else if (userDay == monthDays) {
