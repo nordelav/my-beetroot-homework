@@ -1,12 +1,14 @@
 import numCheck from './numCheck.js';
 
 const factorialCalc = (n) => {
+  
   numCheck(n);
-  let factorial = 1;
-  for (let i = 1; i <= n; i++) {
-    factorial *= i;
+
+  if (n === 1) {
+
+    return n;
   }
-  console.log(`Факторіал ${n} - ${factorial}`);
+  return (n = n * factorialCalc(n - 1));
 };
 
 export default factorialCalc;

@@ -1,37 +1,30 @@
 
-
 import variablesQuantity from './js/variablesQuantity.js';
+
 import numberCompare from './js/numberCompare.js';
+
 import factorialCalc from './js/factorialCalc.js';
+
 import numberJoin from './js/numberJoin.js';
+
 import areaCalc from './js/areaCalc.js';
-import numCheck from './js/NumCheck.js';
+
+import numCheck from './js/numCheck.js';
+
+import testAddition from './js/functionCreate.js';
+
 import perfectNumCheck from './js/perfectNumCheck.js';
+
 import perfectNumRange from './js/perfectNumRange.js';
 
 // *Мінімум
 
 // 1 - Напиши всі можливі варіанти створення функцій.
-
-// ! Declaration (оголошення)
-function testAddition(a, b) {
-  return a + b;
-}
-
-// ! Присвоєння (Expression)
-const testDivision = function testDivision(a, b) {
-  return a / b;
-};
-
-// ! Стрілочна
-
-const multipyTest = (a, b) => {
-  return a * b;
-};
+// ! - дивись  файл funtionCreate;
 
 // 2 Створи функцію, яка буде виводити кількість переданих їй аргументів.
 
-variablesQuantity();
+variablesQuantity(3,4,5,6,7,8,9,'sadasdasdasdas');
 
 /* 3 -Напиши функцію, яка приймає 2 числа і повертає :
 -1, якщо перше число менше, ніж друге; 
@@ -42,7 +35,7 @@ numberCompare(7, 6);
 
 /* 4 - Напиши функцію, яка обчислює факторіал переданого їй числа.*/
 
-factorialCalc (5);
+console.log(factorialCalc (5));
 
 /* 5 - Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
 Наприклад: цифри 1, 4, 9 перетворяться в число 149*/
