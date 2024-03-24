@@ -12,7 +12,7 @@ const car = {
   fuelUsage: '5.3 per km',
 
   Drivers: ['Valentyn'],
-  
+
   nameCheck(arg) {
     if (!arg || typeof arg !== 'string' || arg.length < 3) {
       throw new Error(`Введено не ім'я!!!!!!!!`);
@@ -43,8 +43,11 @@ const car = {
 
   calcTravel(distance) {
     this.numCheck(distance);
+
     const Fuel = +(distance / parseFloat(this.fuelUsage)).toFixed(2);
+
     const roadHours = Math.floor(distance / parseInt(this.MiddleSpeed));
+
     const roadMinutes = Math.round(
       (distance / parseInt(this.MiddleSpeed) - roadHours) * 60
     );
@@ -52,6 +55,7 @@ const car = {
       const travelHours = roadHours + Math.trunc(roadHours / 4);
     }
     const travelHours = roadHours;
+
     console.log(
       `Витрачено пального: ${Fuel} літра. Потрібно дозаправок: ${Math.trunc(
         Fuel / parseInt(this.fuelVolume)

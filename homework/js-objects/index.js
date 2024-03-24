@@ -1,5 +1,7 @@
 import car from './js/carObject.js';
-import dashCalc, { dashFirst, dashSecound,showDash } from './js/dashObject.js';
+
+import dashCalc, { dashFirst, dashSecound, showDash } from './js/dashObject.js';
+
 import time from './js/timeObject.js';
 
 // *Мінімум
@@ -20,7 +22,6 @@ car.AddDrivers('Artur');
 console.log(car.checkDrivers('Artur'));
 
 car.calcTravel(5000);
-
 
 // *Норма
 /* Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
@@ -47,7 +48,6 @@ time.addHours(25);
 
 time.showTime();
 
-
 // * Максимум
 
 /*Створи об'єкт, що описує звичайний дріб. Створи об'єкт, який має методи роботи з дробом:
@@ -59,29 +59,37 @@ time.showTime();
 */
 
 // * Виведення двох об'єктів , як звичайних дробів. Їх дані будуть аргументами для методів нижче.
-showDash(dashFirst.numerator,dashFirst.banner);
+showDash(dashFirst.numerator, dashFirst.banner);
 
-showDash(dashSecound.numerator,dashSecound.banner);
-
+showDash(dashSecound.numerator, dashSecound.banner);
 
 dashCalc.dashAddition(
   dashFirst.numerator,
+
   dashFirst.banner,
+
   dashSecound.numerator,
+
   dashSecound.banner
 );
 
 dashCalc.dashSubstraction(
   dashFirst.numerator,
+
   dashFirst.banner,
+
   dashSecound.numerator,
+
   dashSecound.banner
 );
 
 dashCalc.dashMultiply(
   dashFirst.numerator,
+
   dashFirst.banner,
+
   dashSecound.numerator,
+
   dashSecound.banner
 );
 
