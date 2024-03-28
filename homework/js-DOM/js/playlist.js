@@ -38,6 +38,7 @@ const playList = [
     author: 'METALLICA',
     song: 'ENTER SANDMAN',
   },
+  
 ];
 
 const addList = () => {
@@ -54,9 +55,15 @@ const addList = () => {
 
     let li = document.createElement('li');
 
+    let span = document.createElement('span');
+
     li.className = 'main-playlist-item';
 
-    li.innerText = `${object.author} - ${object.song}`;
+    span.className ='main-playlist-text';
+
+    span.innerText = `${object.author} - ${object.song}`;
+    
+    li.appendChild(span);
 
     list.appendChild(li);
   });
