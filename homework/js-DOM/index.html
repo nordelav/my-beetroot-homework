@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>DOM</title>
+  </head>
+  <body>
+
+    <div class="app">
+
+      <header class="header">
+
+        <div class="wrapper header-wrapper">
+          
+          <a href="../../index.html">
+
+            <h1>HOME</h1>
+
+          </a>
+          <div id="js-modal" class="header-modal">
+
+            <div class="header-modal-text">
+
+              <p>Якщо ти бачиш цей текст, то модальне вікно відкрилось</p>
+
+              <button id="js-modal-close" class="button" type="button">
+                
+                <span>Закрити</span>
+              
+              </button>
+
+            </div>
+
+          </div>
+
+          <button id="js-modal-open" class="button" type="button">
+
+            <span>Відкрити</span>
+
+          </button>
+
+        </div>
+
+      </header>
+
+      <main class="main">
+
+        <div class="wrapper main-wrapper">
+
+          <div class="main-playlist-block" id="js-playlist"></div>
+
+          <div class="main-trafic-light-block">
+
+            <div class="trafic-light" id="js-trafic-light">
+
+              <div class="trafic-light-bulb  js-trafic-bulb"></div>
+
+              <div class="trafic-light-bulb js-trafic-bulb"></div>
+              
+              <div class="trafic-light-bulb js-trafic-bulb"></div>
+            
+            </div>
+
+            <button class="button" type="button" id="js-trafic-switch">Переключити</button>
+          
+          </div>
+        
+        </div>
+      
+      </main>
+    
+    </div>
+    
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
