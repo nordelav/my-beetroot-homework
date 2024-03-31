@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Events</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="wrapper header-wrapper">
+          <a href="../../index.html">
+            <h1>HOME</h1>
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper main-wrapper">
+          <div class="main-textblock" id="js-textblock">Here`s text</div>
+          <div class="main-table">
+            <table id="js-table" cellpadding="0" cellspacing="0" border="0">
+              <thead>
+                <tr>
+                  <th class="js-stringsort">Name</th>
+                  <th class="js-numbersort">Age</th>
+                  <th class="js-numbersort">Salary</th>
+                  <th class="js-stringsort">Country</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="main-movable-block" id="js-movable-block">
+            <p>some text in movable block</p>
+            <div class="main-movable-block-pointer" id="js-resizepoint"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script defer type="module" src="./index.js"></script>
+  </body>
+</html>
