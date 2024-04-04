@@ -1,0 +1,15 @@
+.button{
+  background-color: transparent;
+  padding: 0 15px;
+  border: 1px solid orange;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+  &:active,&:hover{
+    color: white;
+    background-color: orange;
+  }
+  &-page{
+    padding: 5px;
+    flex:1;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="wrapper header-wrapper">
+          <a href="../../index.html">
+            <h1>HOME</h1>
+          </a>
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="wrapper main-wrapper" id="js-main-wrapper">
+          <form method="get" class="main-form" id="js-search-form">
+            <input type="text" name="title" placeholder="Enter movie title, please"/>
+
+            <select name="type" id="js-movieType">
+              <option value="">Select film type</option>
+              <option value="Movie">Movie</option>
+              <option value="Series">Series</option>
+              <option value="Epsiode">Epsiode</option>
+            </select>
+
+            <button class="button" type="submit" id="js-search-button"><span>Search</span></button>
+          </form>
+          <p class="main-errortext" id="js-error-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <script defer type="module" src="./index.js"></script>
+  </body>
+</html>
