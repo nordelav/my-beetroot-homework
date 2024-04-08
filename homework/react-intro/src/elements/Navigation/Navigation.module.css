@@ -1,0 +1,35 @@
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  padding: 5px;
+}
+
+.underline {
+  transition: opacity 0.5s linear 0s;
+  opacity: 0;
+  width: calc(100% - 32px);
+  background-color: #000;
+  height: 1px;
+}
+
+.item:hover > .underline {
+  opacity: 1;
+}

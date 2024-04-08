@@ -1,0 +1,8 @@
+.wrapper {
+  padding-top: 30px;
+}
+
+.block {
+  display: flex;
+  gap: 20px;
+}
